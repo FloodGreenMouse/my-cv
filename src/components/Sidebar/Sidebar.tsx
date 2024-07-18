@@ -11,7 +11,7 @@ export function Sidebar () {
     <>
       <SidebarComponent>
         <AvatarSection>
-          <img src="/photo.jpg" alt="Avatar"/>
+          <img src="/my-cv/photo.jpg" alt="Avatar"/>
         </AvatarSection>
 
         <NameSection>

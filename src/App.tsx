@@ -8,7 +8,7 @@ function App () {
   return (
     <>
       <AppComponent>
-        <ButtonDownloadPdf href="/cv-sergei-platitsin.pdf" download>
+        <ButtonDownloadPdf href="/my-cv/cv-sergei-platitsin.pdf" target="_blank">
           <IconDownload/>
           <span>PDF</span>
         </ButtonDownloadPdf>
