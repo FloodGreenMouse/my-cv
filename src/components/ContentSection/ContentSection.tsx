@@ -51,6 +51,7 @@ export function ContentSection () {
                   period={item.period}
                   universityName={item.universityName}
                   department={item.department}
+                  speciality={item.speciality}
                 />)
               }
             </Education>

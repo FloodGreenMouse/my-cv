@@ -5,10 +5,11 @@ type Props = {
   position?: string,
   period?: string
   universityName?: string,
-  department?: string
+  department?: string,
+  speciality?: string
 }
 
-export function EducationItem ({ position, period, universityName, department }: Props) {
+export function EducationItem ({ position, period, universityName, department, speciality }: Props) {
   return (
     <>
       <EducationItemComponent>
@@ -18,7 +19,10 @@ export function EducationItem ({ position, period, universityName, department }:
         </ItemHead>
 
         <CompanyName>{universityName}</CompanyName>
-        <span>{department}</span>
+        <div><span>{department}</span></div>
+        <div>
+          <span><strong>Специальность:</strong> {speciality}</span>
+        </div>
       </EducationItemComponent>
     </>
   )

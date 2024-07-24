@@ -71,8 +71,9 @@ export const InfoExperience = [
 export const InfoEducation = [
   {
     position: 'Бакалавр',
-    universityName: 'Сибирский Федеральный Университет',
+    universityName: 'Сибирский Федеральный Университет, г. Красноярск',
     department: 'Институт Космических и Информационных Технологий',
+    speciality: 'Информационные системы и технологии',
     period: '2012 - 2016 г.'
   }
 ]
