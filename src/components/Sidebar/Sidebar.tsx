@@ -3,10 +3,17 @@ import { BioItem } from '../BioItem/BioItem.tsx'
 import { SocialItem } from '../SocialItem/SocialItem.tsx'
 import { LanguageItem } from '../LanguageItem/LanguageItem.tsx'
 import { screenDevice } from '../../utils/screen-size.ts'
+import { useTranslation } from 'react-i18next';
 
 import { InfoBio, InfoSocials, InfoLanguages } from '../../utils/info.ts'
 
 export function Sidebar () {
+  const { t } = useTranslation();
+
+  const getMyYears = () => {
+    return Number(new Date().getFullYear()) - 1994
+  }
+
   return (
     <>
       <SidebarComponent>
@@ -15,14 +22,15 @@ export function Sidebar () {
         </AvatarSection>
 
         <NameSection>
-          <h1>Платицин Сергей</h1>
+          <h1>{ t('myName') }</h1>
           <span>Frontend developer</span>
+          <YearsOld>{ getMyYears() } { t('yearsold') }</YearsOld>
         </NameSection>
 
         <hr/>
 
         <BioSection>
-          <Subtitle>Контакты</Subtitle>
+          <Subtitle>{ t('contacts') }</Subtitle>
           { InfoBio.map((item, i) => <BioItem
             key={i}
             icon={item.icon}
@@ -35,7 +43,7 @@ export function Sidebar () {
         <hr/>
 
         <SocialSection>
-          <Subtitle>Социальные сети</Subtitle>
+          <Subtitle>{ t('social') }</Subtitle>
           { InfoSocials.map((item, i) => <SocialItem
             key={i}
             icon={item.icon}
@@ -48,7 +56,7 @@ export function Sidebar () {
         <hr/>
 
         <LanguagesSection>
-          <Subtitle>Языки</Subtitle>
+          <Subtitle>{ t('languages') }</Subtitle>
           { InfoLanguages.map((item, i) => <LanguageItem
             key={i}
             icon={item.icon}
@@ -178,4 +186,12 @@ const Background = styled.div`
     top: 80%;
     transform: translateX(-50%) translateY(-50%);
   }
+`
+
+const YearsOld = styled.div`
+  font-size: 11px;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  line-height: 22px;
 `

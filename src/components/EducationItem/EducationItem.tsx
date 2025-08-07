@@ -1,5 +1,6 @@
 import { screenDevice } from '../../utils/screen-size.ts'
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   position?: string,
@@ -10,6 +11,8 @@ type Props = {
 }
 
 export function EducationItem ({ position, period, universityName, department, speciality }: Props) {
+  const { t } = useTranslation()
+
   return (
     <>
       <EducationItemComponent>
@@ -21,7 +24,7 @@ export function EducationItem ({ position, period, universityName, department, s
         <CompanyName>{universityName}</CompanyName>
         <div><span>{department}</span></div>
         <div>
-          <span><strong>Специальность:</strong> {speciality}</span>
+          <span><strong>{ t('major') }:</strong> {speciality}</span>
         </div>
       </EducationItemComponent>
     </>

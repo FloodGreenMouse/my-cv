@@ -18,7 +18,7 @@ export function SkillItem ({ skill }: Props) {
 const SkillItemComponent = styled.div`
   border: 1px solid #ECF4F9;
   background-color: #F7FAFC;
-  padding: 4px 8px;
+  padding: 2px 6px;
   border-radius: 8px;
   margin: 0 8px 8px 8px;
   cursor: default;
@@ -44,7 +44,7 @@ const SkillItemComponent = styled.div`
 `
 
 const Skill = styled.div`
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 500;
   color: #516CF7;

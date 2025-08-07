@@ -1,0 +1,71 @@
+{
+  "myName": "Sergei Platitsin",
+  "contacts": "Contacts",
+  "social": "Social",
+  "languages": "Languages",
+  "phone": "Phone",
+  "city": "City",
+  "experience": "Experience",
+  "education": "Education",
+  "skills": "Skills",
+  "saint": "St. Petersburg, Russia",
+  "changeLanguage": "Switch to Russian",
+  "current": "Current",
+  "major": "Major",
+  "yearsold": "y.o.",
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "workExperience": {
+    "lamoda": [
+      "Development of internal company services and tools from scratch",
+      "Architecture design and technology stack selection for applications",
+      "Writing E2E and Unit tests",
+      "Code review",
+      "Participating in task planning and estimation"
+    ],
+    "idgtl": [
+      "Frontend development with Vue for <a href=\"https://direct.i-dgtl.ru/\" target=\"_blank\">i-Digital Direct Personal Account</a> and <a href=\"https://i-dgtl.ru/produkty-i-uslugi/widget-verifikatsii/\" target=\"_blank\">i-Digital Verification Widget</a>",
+      "Development of the company’s internal UI-kit",
+      "Development of internal company services and tools from scratch",
+      "Architecture design and technology stack selection for applications",
+      "Maintaining documentation in Storybook",
+      "Leading the company’s frontend development team",
+      "Conducting code reviews, mentoring, and coaching",
+      "Participating in task planning and estimation",
+      "Onboarding new employees",
+      "Conducting job interviews"
+    ],
+    "pitch": [
+      "Layout based on Figma and Zeplin designs",
+      "Application development using Vue and Nuxt",
+      "Development of internal company services",
+      "Communication with design and QA departments",
+      "Discussing and shaping project architecture with the backend team"
+    ],
+    "freelance": [
+      "Landing page layout",
+      "Web application development using Vue, Nuxt, and frameworkless"
+    ],
+    "intern": [
+      "Software development for EVOTOR online cash registers using AngularJS v1 and PHP"
+    ]
+  },
+  "infoEducation": {
+    "position": "Bachelor’s Degree",
+    "universityName": "Siberian Federal University, Krasnoyarsk, Russia",
+    "department": "Institute of Space and Information Technologies",
+    "speciality": "Information Systems and Technologies"
+  }
+}

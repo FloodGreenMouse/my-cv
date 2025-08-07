@@ -2,16 +2,19 @@ import styled from 'styled-components'
 import { ExperienceItem } from '../ExperienceItem/ExperienceItem.tsx'
 import { SkillItem } from '../SkillItem/SkillItem.tsx'
 import { EducationItem } from '../EducationItem/EducationItem.tsx'
-import { InfoExperience, InfoSkills, InfoEducation } from '../../utils/info.ts'
+import { InfoSkills, InfoEducation, InfoExperience } from '../../utils/info.ts'
 import { screenDevice } from '../../utils/screen-size.ts'
+import { useTranslation } from 'react-i18next';
 
 export function ContentSection () {
+  const { t } = useTranslation();
+
   return (
     <>
       <ContentSectionComponent>
         <Content>
           <ExperienceSection>
-            <Title>Опыт работы</Title>
+            <Title>{ t('experience') }</Title>
             <ExperienceItems>
               {InfoExperience.map((item, i) => <ExperienceItem
                 key={i}
@@ -19,14 +22,14 @@ export function ContentSection () {
                 period={item.period}
                 companyName={item.companyName}
                 current={item.current}
-                list={item.list}
+                list={item.list as string[]}
               />)}
 
             </ExperienceItems>
           </ExperienceSection>
 
           <SkillsSection>
-            <Title>Навыки</Title>
+            <Title>{ t('skills') }</Title>
 
             <div>
               {InfoSkills.map((skillsList, i) =>
@@ -41,7 +44,7 @@ export function ContentSection () {
           </SkillsSection>
 
           <EducationSection>
-            <Title>Образование</Title>
+            <Title>{ t('education') }</Title>
 
             <Education>
               {InfoEducation.map((item, i) =>

@@ -1,5 +1,6 @@
 import { screenDevice } from '../../utils/screen-size.ts'
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   position: string,
@@ -10,6 +11,8 @@ type Props = {
 }
 
 export function ExperienceItem ({ position, companyName, period, current, list }: Props) {
+  const { t } = useTranslation()
+
   return (
     <>
       <ExperienceItemComponent $current={current || false}>
@@ -23,7 +26,7 @@ export function ExperienceItem ({ position, companyName, period, current, list }
 
           <CompanyInfo>
             <CompanyName dangerouslySetInnerHTML={{__html: companyName}} />
-            {current && <Current>Текущая</Current>}
+            {current && <Current>{ t('current') }</Current>}
           </CompanyInfo>
         </Container>
         {list && <List>
